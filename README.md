@@ -25,4 +25,11 @@ This is currently written for windows only. I expect to edit the list when insta
 - [FiraCode nerd font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/FiraCode.zip)
 - Terminal:
   - WSL (Windows subsystem for linux): `wsl.exe --install`
-  - OMP Oh my posh or (ZSH)[https://ohmyz.sh/] if on Linux
+  - [Oh my posh](https://ohmyposh.dev/docs/installation/windows)
+    - Create profile file: `New-Item -Path $PROFILE -Type File -Force` 
+    - Open profile file `notepad $PROFILE`
+    - Paste: 
+    -    
+  - [ZSH](https://ohmyz.sh/) if on Linux
+  - [fzf](https://github.com/junegunn/fzf)
+  - [zoxide](https://github.com/ajeetdsouza/zoxide)
