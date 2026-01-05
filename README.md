@@ -23,6 +23,7 @@ This is currently written for windows only. I expect to edit the list when insta
   - Vimium
 - [WIndows Microsoft PowerToys](https://github.com/microsoft/PowerToys)
 - [FiraCode nerd font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/FiraCode.zip)
+- [Docker](https://docs.docker.com/desktop/setup/install/windows-install/)
 - Terminal:
   - WSL (Windows subsystem for linux): `wsl.exe --install`
   - TMUX https://github.com/tmux/tmux/wiki
