@@ -47,17 +47,22 @@ if (Test-Path($ChocolateyProfile)) {
 
 Invoke-Expression (& { (zoxide init powershell | Out-String) })
 ```
-# ZSH
+# ZSH via WSL
   - [eza](https://github.com/eza-community/eza)
   - [ZSH](https://ohmyz.sh/) if on Linux or pimping WSL
-  - After pasting the next step, you will probably get multiple errors, dont worry, we will go trough them one by one.
+  - Install nodejs:
+    - Make sure to install it via wsl, pick [for linux, via nvm](https://nodejs.org/en/download)
+  - Install angular `npm install -g @angular/cli` (you need this to get the `ng` command)
+  - Install cargo `curl https://sh.rustup.rs -sSf | sh` (I use rust on some other project, since i want to just copy/paste my zsh config, i need it everywhere)
+  - Install zsh-syntax-highlight `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+  - Install powerlevel10k git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
   - Download cattpuccin mocha into ~/_repos/.
 ```shell
 mkdir ~/_repos
 cd ~/_repos
 git clone https://github.com/catppuccin/zsh-syntax-highlighting/tree/main
 ```
-    - Paste the following into ~/.zshrc after installing zsh:
+- Paste the following into ~/.zshrc after installing zsh:
 ```bash
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -203,4 +208,5 @@ source <(ng completion script)
 # Load cargo.
 . "$HOME/.cargo/env"
 ```
-/home/kevin/.zshrc:source:76: no such file or directory: /home/kevin/_repos/zsh-syntax-highlighting/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
+
+
