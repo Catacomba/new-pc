@@ -22,6 +22,7 @@ This is currently written for windows only. I expect to edit the list when insta
 - Chrome extensions:
   - Vimium
 - [WIndows Microsoft PowerToys](https://github.com/microsoft/PowerToys)
+- [FiraCode nerd font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/FiraCode.zip)
 - Terminal:
   - WSL (Windows subsystem for linux): `wsl.exe --install`
-  - (ZSH)[https://ohmyz.sh/]
+  - OMP Oh my posh or (ZSH)[https://ohmyz.sh/] if on Linux
