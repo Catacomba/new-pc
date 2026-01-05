@@ -1,4 +1,5 @@
-# new-pc
+# Fresh PC installation
+
 This will be a repo for my notes when installing a new PC.
 
 - Install Chrome
@@ -18,3 +19,4 @@ This will be a repo for my notes when installing a new PC.
   - 7zip, Winrar
 - Chrome extensions:
   - Vimium
+- [WIndows Microsoft PowerToys](https://github.com/microsoft/PowerToys)
