@@ -28,7 +28,21 @@ This is currently written for windows only. I expect to edit the list when insta
   - [Oh my posh](https://ohmyposh.dev/docs/installation/windows)
     - Create profile file: `New-Item -Path $PROFILE -Type File -Force` 
     - Open profile file `notepad $PROFILE`
-    - Paste: 
+    - Paste into the file:
+```
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/M365Princess.omp.json" | Invoke-Expression
+Import the Chocolatey Profile that contains the necessary code to enable
+tab-completions to function for choco.
+Be aware that if you are missing these lines from your profile, tab completion
+for choco will not function.
+See https://ch0.co/tab-completion for details.
+$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+if (Test-Path($ChocolateyProfile)) {
+  Import-Module "$ChocolateyProfile"
+}
+
+Invoke-Expression (& { (zoxide init powershell | Out-String) })
+```
     -    
   - [ZSH](https://ohmyz.sh/) if on Linux
   - [fzf](https://github.com/junegunn/fzf)
