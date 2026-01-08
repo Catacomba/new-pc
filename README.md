@@ -422,6 +422,6 @@ set -g mouse on
 
 # Start window numbering at 1, not 0
 set -g base-index 1
-setw-g pane-base-index 1
+setw -g pane-base-index 1
 
 ```
