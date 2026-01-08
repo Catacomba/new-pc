@@ -413,7 +413,7 @@ source <(ng completion script)
 ```
 # Tmux via WSL
 
-`sudo apt install tmux`
+Install tmux with: `sudo apt install tmux`
 
 Copy the following config into `~/.tmux.conf`
 ```
@@ -423,5 +423,12 @@ set -g mouse on
 # Start window numbering at 1, not 0
 set -g base-index 1
 setw -g pane-base-index 1
-
 ```
+
+# NVIM via WSL
+
+Install neovim with `sudo apt install neovim`
+
+Install the config: `git clone https://github.com/Catacomba/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim`
+
+Start `nvim` and restart it a few times.
