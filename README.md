@@ -427,8 +427,16 @@ setw -g pane-base-index 1
 
 # NVIM via WSL
 
-Install neovim with `sudo apt install neovim`
+Install nvim:
+Download the latest nvim files: https://neovim.io/doc/install/#install-from-download
+
+Create a symbolic link with `sudo ln -s /opt/nvim-linux-x86_64/bin/nvim /usr/local/bin/nvim`, so that the shell knows the location of nvim. 
+
+Extract the files with `tar -xzvf [FILENAME] -C /opt`. This will extract it into `/opt`. This should enable you to run `nvim`. If this does not work, check .zshrc and fix ur path to nvim.
+
+Check if nvim is working with `nvim --clean`. This will load without config.
 
 Install the config: `git clone https://github.com/Catacomba/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim`
 
 Start `nvim` and restart it a few times.
+Failed to run `config` for nvim-treesitter
