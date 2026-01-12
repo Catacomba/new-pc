@@ -890,13 +890,8 @@ setw -g pane-base-index 1
 
 # NVIM via WSL
 
-- `sudo apt-get install unzip ripgrep`
-- `sudo apt install build-essential libreadline-dev unzip`
+- `sudo apt update && sudo apt install -y unzip ripgrep build-essential libreadline-dev fd-find lua5.1 liblua5.1-dev python3 python3-pip python3.12-venv`
 - `brew install luarocks`
-- `sudo apt install fd-find`
-- `sudo apt install lua5.1 liblua5.1-dev`
-- `sudp apt install python3 python3-pip`
-- `sudo apt install python3.12-venv`
 - Run nvim and use the command :checkhealth to see if anything is missing or not correct
 - If custom plugins are not working yet, uncomment the part in the kickstart init.lua that enables custom plugins.
 
