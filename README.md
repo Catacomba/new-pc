@@ -432,6 +432,7 @@ setw -g pane-base-index 1
 - `brew install luarocks`
 - `sudo apt install fd-find`
 - `sudo apt install lua5.1 liblua5.1-dev`
+- `sudp apt install python3 python3-pip`
 - Run nvim and use the command :checkhealth to see if anything is missing or not correct
 
 Install [treesitter](https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file) prerequisites:
