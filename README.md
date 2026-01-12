@@ -427,6 +427,17 @@ setw -g pane-base-index 1
 
 # NVIM via WSL
 
+- `sudo apt-get install unzip ripgrep`
+- `sudo apt install build-essential libreadline-dev unzip`
+- `brew install luarocks`
+- `sudo apt install fd-find`
+- `sudo apt install lua5.1 liblua5.1-dev`
+- Run nvim and use the command :checkhealth to see if anything is missing or not correct
+
+Install [treesitter](https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file) prerequisites:
+  - Requirements for installing tree-sitter-cli: `sudo apt install build-essential clang libclang-dev`
+  - `cargo install --locked tree-sitter-cli`
+
 Install nvim:
 Download the latest nvim files: https://neovim.io/doc/install/#install-from-download
 
