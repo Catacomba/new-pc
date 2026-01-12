@@ -898,6 +898,7 @@ setw -g pane-base-index 1
 - `sudp apt install python3 python3-pip`
 - `sudo apt install python3.12-venv`
 - Run nvim and use the command :checkhealth to see if anything is missing or not correct
+- If custom plugins are not working yet, uncomment the part in the kickstart init.lua that enables custom plugins.
 
 Install [treesitter](https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file) prerequisites:
   - Requirements for installing tree-sitter-cli: `sudo apt install build-essential clang libclang-dev`
